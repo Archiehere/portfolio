@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Archas Srivastava — Full Stack Software Engineer specializing in React, Node.js, TypeScript, SwiftUI and fintech/Web3 applications." />
+  <title>Archas Srivastava · Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__brand">
+      <span class="nav__logo">AS</span>
+      <span class="nav__name">Archas Srivastava</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__inner reveal">
+        <p class="hero__eyebrow"><span class="status-dot"></span> Available for new opportunities</p>
+        <h1 class="hero__title">
+          Hi, I'm <span class="grad-text">Archas</span>.<br />
+          I build <span class="rotator" id="rotator">full stack apps</span>
+        </h1>
+        <p class="hero__lead">
+          Full Stack Software Engineer crafting performant, scalable web &amp; mobile experiences
+          with <strong>React</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>
+          and <strong>SwiftUI</strong> — currently building fintech &amp; Web3 products at
+          <strong>Benefi Spark Global</strong>.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+        <div class="hero__socials">
+          <a href="https://github.com/Archiehere" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/archas-srivastava-468878242/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://leetcode.com/Archas_/" target="_blank" rel="noopener" aria-label="LeetCode">LeetCode</a>
+          <a href="https://codeforces.com/profile/Archas" target="_blank" rel="noopener" aria-label="Codeforces">Codeforces</a>
+          <a href="https://www.codechef.com/users/archas" target="_blank" rel="noopener" aria-label="CodeChef">CodeChef</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats reveal">
+      <div class="stat"><span class="stat__num" data-count="2">0</span><span class="stat__label">Years building products</span></div>
+      <div class="stat"><span class="stat__num" data-count="100" data-suffix="+">0</span><span class="stat__label">DSA problems solved</span></div>
+      <div class="stat"><span class="stat__num" data-count="60" data-suffix="%">0</span><span class="stat__label">Faster load times shipped</span></div>
+      <div class="stat"><span class="stat__num" data-count="150" data-suffix="+">0</span><span class="stat__label">Workshop participants led</span></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2 class="section__title">About me</h2>
+      </div>
+      <div class="about reveal">
+        <div class="about__text">
+          <p>
+            I'm a Full Stack Developer based in Greater Noida, India, with a B.Tech in
+            Computer Science from <strong>Dr. A.P.J. Abdul Kalam Technical University</strong>.
+            I love turning complex problems into clean, fast, and reliable software.
+          </p>
+          <p>
+            Over the last couple of years I've shipped production features across the stack —
+            from <strong>Stripe payments</strong> and <strong>Web3 wallet</strong> integrations
+            to customizable onboarding platforms, real-time mobile apps, and scalable backends
+            with CI/CD, Redis caching, and cluster scaling on AWS. I also compete in
+            competitive programming and enjoy mentoring fellow developers.
+          </p>
+          <ul class="about__facts">
+            <li><span>📍</span> Greater Noida, Uttar Pradesh, India</li>
+            <li><span>🎓</span> B.Tech, Computer Science (2021–2025)</li>
+            <li><span>💼</span> Software Engineer @ Benefi Spark Global</li>
+            <li><span>🏆</span> 1st Runner-up · WebWars, NIT Trichy</li>
+          </ul>
+        </div>
+        <aside class="about__card">
+          <div class="codeblock" aria-hidden="true">
+            <div class="codeblock__bar"><span></span><span></span><span></span></div>
+            <pre><code><span class="tk-key">const</span> <span class="tk-var">archas</span> = {
+  <span class="tk-prop">role</span>: <span class="tk-str">'Software Engineer'</span>,
+  <span class="tk-prop">stack</span>: [<span class="tk-str">'React'</span>, <span class="tk-str">'Node'</span>, <span class="tk-str">'TS'</span>, <span class="tk-str">'SwiftUI'</span>],
+  <span class="tk-prop">domains</span>: [<span class="tk-str">'fintech'</span>, <span class="tk-str">'web3'</span>],
+  <span class="tk-prop">focus</span>: <span class="tk-str">'performance &amp; scale'</span>,
+  <span class="tk-prop">openToWork</span>: <span class="tk-bool">true</span>,
+};</code></pre>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2 class="section__title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <article class="tl-item reveal">
+          <div class="tl-item__dot"></div>
+          <div class="tl-item__body">
+            <div class="tl-item__top">
+              <h3>Software Engineer · Full Stack</h3>
+              <span class="tl-item__date">Jun 2024 — Present</span>
+            </div>
+            <p class="tl-item__org">Benefi Spark Global <span class="muted">· New York, USA</span></p>
+            <ul>
+              <li>Integrated <strong>Stripe</strong> with a <strong>SwiftUI</strong> frontend and <strong>TypeScript</strong> backend for card &amp; bank payments.</li>
+              <li>Implemented <strong>dynamic.xyz</strong> to connect multiple wallets including MetaMask and Coinbase.</li>
+              <li>Leveraged the <strong>Dune API</strong> to retrieve multi-chain balances, tokens &amp; transactions for Web3 wallets.</li>
+            </ul>
+            <div class="tl-item__tags">
+              <span>SwiftUI</span><span>TypeScript</span><span>Stripe</span><span>Web3</span><span>dynamic.xyz</span><span>Dune API</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-item__dot"></div>
+          <div class="tl-item__body">
+            <div class="tl-item__top">
+              <h3>Full Stack Developer</h3>
+              <span class="tl-item__date">Feb 2024 — May 2024</span>
+            </div>
+            <p class="tl-item__org">NxtPe <span class="muted">· Dubai (Remote)</span></p>
+            <ul>
+              <li>Developed a <strong>fully customizable user-onboarding platform</strong> that merchants can configure to onboard users to their product with ease.</li>
+              <li>Implemented <strong>user analytics</strong> with Google Analytics 4 and Hotjar to generate conversion funnels.</li>
+              <li>Ran <strong>load testing</strong> with JMeter and optimized platform performance under scale.</li>
+            </ul>
+            <div class="tl-item__tags">
+              <span>React</span><span>TypeScript</span><span>GA4</span><span>Hotjar</span><span>JMeter</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-item__dot"></div>
+          <div class="tl-item__body">
+            <div class="tl-item__top">
+              <h3>Full Stack Developer</h3>
+              <span class="tl-item__date">Jul 2023 — Jan 2024</span>
+            </div>
+            <p class="tl-item__org">Fullcircle Technologies Inc. <span class="muted">· Atlanta, GA, USA (Remote)</span></p>
+            <ul>
+              <li>Built <strong>React Native</strong> screens with real-time features for a mental-health awareness app.</li>
+              <li>Collaborated remotely across time zones with designers, backend engineers, and PMs for smooth frontend integration.</li>
+              <li>Implemented <strong>pagination &amp; lazy loading</strong> for chats, cutting load times by <strong>60%</strong>.</li>
+            </ul>
+            <div class="tl-item__tags">
+              <span>React Native</span><span>Real-time</span><span>UI/UX</span><span>Performance</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-item__dot"></div>
+          <div class="tl-item__body">
+            <div class="tl-item__top">
+              <h3>Developer · Software Incubator (SDC-SI)</h3>
+              <span class="tl-item__date">2022 — Present</span>
+            </div>
+            <p class="tl-item__org">AKGEC <span class="muted">· Ghaziabad, India</span></p>
+            <ul>
+              <li>Built robust, scalable backends with <strong>MVC</strong> architecture and <strong>REST APIs</strong>.</li>
+              <li>Developed web interfaces using React.js, TypeScript, and React Native.</li>
+              <li>Organized a competitive-programming workshop &amp; contest with <strong>150+</strong> participants in a cross-functional team of <strong>45</strong>.</li>
+            </ul>
+            <div class="tl-item__tags">
+              <span>Node.js</span><span>REST</span><span>React</span><span>Leadership</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2 class="section__title">Featured projects</h2>
+      </div>
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project__top">
+            <div class="project__icon">🔮</div>
+            <div class="project__links">
+              <a class="project__link" href="https://app.oracleprotocol.online" target="_blank" rel="noopener" aria-label="Launch Oracle app" title="Launch app">↗</a>
+              <a class="project__link" href="https://github.com/Alg0-labs/Oracle-On-chain-Intelligence" target="_blank" rel="noopener" aria-label="Oracle Protocol on GitHub" title="GitHub">&lt;/&gt;</a>
+            </div>
+          </div>
+          <h3>Oracle Protocol</h3>
+          <p>An AI intelligence layer for crypto wallets — connect once and ask anything in plain English. Surfaces unified net worth, <strong>risk analysis</strong>, decoded transaction intel, and market context, plus <strong>send ETH via chat</strong>. Non-custodial, with all signing client-side over <strong>WalletConnect / Reown</strong> and answers grounded in live <strong>Claude</strong> + <strong>Moralis</strong> data.</p>
+          <div class="project__tags"><span>React</span><span>TypeScript</span><span>Wagmi / Viem</span><span>Claude AI</span><span>Express</span><span>Prisma</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <div class="project__icon">📱</div>
+            <a class="project__link" href="https://github.com/Alg0-labs/oggy" target="_blank" rel="noopener" aria-label="Oggy on GitHub" title="GitHub">&lt;/&gt;</a>
+          </div>
+          <h3>Oggy</h3>
+          <p>Describe any app in plain English and watch it render natively on your phone. Oggy uses <strong>LLMs</strong> to generate self-contained React Native mini-apps, then validates, Babel-transforms, and runs the JSX in a <strong>sandboxed, whitelisted</strong> context — no webview. Bring-your-own-key for OpenAI, Gemini &amp; Claude, stored in the device Keychain.</p>
+          <div class="project__tags"><span>React Native</span><span>Expo</span><span>TypeScript</span><span>Zustand</span><span>LLMs</span><span>Babel</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <div class="project__icon">🔗</div>
+            <a class="project__link" href="https://github.com/Tech-Shreyansh/Profolio-Frontend" target="_blank" rel="noopener" aria-label="Connect Plus on GitHub" title="GitHub">&lt;/&gt;</a>
+          </div>
+          <h3>Connect Plus</h3>
+          <p>A LinkedIn-style social platform for professional connections and jobs — posts, reactions, comments, chats, and notifications. Built real-time chat &amp; notifications over <strong>WebSockets</strong> with <strong>optimistic UI updates</strong>.</p>
+          <div class="project__tags"><span>ReactJS</span><span>TypeScript</span><span>WebSockets</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <div class="project__icon">📦</div>
+            <a class="project__link" href="https://github.com/Archiehere/SamriddhiPrawah" target="_blank" rel="noopener" aria-label="Samriddhi Prawah on GitHub" title="GitHub">&lt;/&gt;</a>
+          </div>
+          <h3>Samriddhi Prawah</h3>
+          <p>A commodity-sharing platform for my college. Used <strong>Redis</strong> for a <strong>90%</strong> performance boost, automated deploys via <strong>GitHub Actions → AWS EC2</strong>, scaled with <strong>cluster nodes</strong>, and hardened with rate limiting, CSRF &amp; XSS protection.</p>
+          <div class="project__tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Redis</span><span>CI/CD</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <div class="project__icon">🍔</div>
+            <a class="project__link" href="https://github.com/Archiehere/Foodora_Backend" target="_blank" rel="noopener" aria-label="Foodora on GitHub" title="GitHub">&lt;/&gt;</a>
+          </div>
+          <h3>Foodora</h3>
+          <p>Backend for a food-delivery service built on RESTful APIs — authentication &amp; authorization with <strong>JSON Web Tokens</strong>, a cart service, ratings, and a geolocation-based recommendation engine.</p>
+          <div class="project__tags"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span></div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__top">
+            <div class="project__icon">🎮</div>
+            <a class="project__link" href="https://github.com/Archiehere/TekkenJS" target="_blank" rel="noopener" aria-label="Street Fighter on GitHub" title="GitHub">&lt;/&gt;</a>
+          </div>
+          <h3>Street Fighter</h3>
+          <p>A local-multiplayer browser fighting game inspired by Street Fighter — all fight logic hand-coded in vanilla <strong>JavaScript</strong>. Runs entirely in the browser with zero installation.</p>
+          <div class="project__tags"><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 class="section__title">Tech stack &amp; skills</h2>
+      </div>
+      <div class="skills reveal">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="chips">
+            <span>C++</span><span>JavaScript</span><span>TypeScript</span><span>Python</span><span>Swift</span><span>Objective-C</span><span>HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Development</h3>
+          <div class="chips">
+            <span>ReactJS</span><span>Node.js</span><span>Express</span><span>React Native</span><span>SwiftUI</span><span>UIKit</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Databases</h3>
+          <div class="chips">
+            <span>MongoDB</span><span>PostgreSQL</span><span>SQLite</span><span>DynamoDB</span><span>Redis</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools, Cloud &amp; Fintech</h3>
+          <div class="chips">
+            <span>AWS</span><span>Serverless</span><span>Docker</span><span>Git</span><span>Nginx</span><span>Prisma</span><span>Stripe</span><span>dynamic.xyz</span><span>Dune API</span><span>VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section" id="achievements">
+      <div class="section__head reveal">
+        <span class="section__index">05</span>
+        <h2 class="section__title">Achievements</h2>
+      </div>
+      <div class="awards">
+        <div class="award reveal"><div class="award__medal">🥈</div><p><strong>1st Runner-up</strong> at WebWars, a hackathon hosted by <strong>NIT Trichy</strong>.</p></div>
+        <div class="award reveal"><div class="award__medal">🏅</div><p>Secured <strong>Rank 2</strong> in the competitive coding contest organised by SDC-SI, AKGEC.</p></div>
+        <div class="award reveal"><div class="award__medal">🌍</div><p>Global rank <strong>463</strong> in CodeChef Starters 57 (Div 3, rated) among 3k+ participants.</p></div>
+        <div class="award reveal"><div class="award__medal">🌐</div><p>Global rank <strong>468</strong> in CodeChef Starters 53 (Div 4, rated) among 3k+ participants.</p></div>
+        <div class="award reveal"><div class="award__medal">⚡</div><p>Solved <strong>100+ DSA problems</strong> across CodeChef, Codeforces &amp; LeetCode.</p></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="contact__inner reveal">
+        <span class="section__index">06</span>
+        <h2 class="contact__title">Let's build something <span class="grad-text">together</span></h2>
+        <p class="contact__lead">
+          I'm open to full-stack roles and interesting collaborations. The fastest way to
+          reach me is email — I usually reply within a day.
+        </p>
+        <a href="mailto:archassrivastava@gmail.com" class="btn btn--primary btn--lg">archassrivastava@gmail.com</a>
+        <div class="contact__links">
+          <a href="https://github.com/Archiehere" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/archas-srivastava-468878242/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="tel:+919350091727">+91 93500 91727</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Archas Srivastava · Built with care &amp; vanilla JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
